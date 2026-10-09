@@ -141,6 +141,7 @@ if (themeToggle) {
         document.body.dataset.theme = theme;
         themeToggle.textContent = theme === "dark" ? "Light mode" : "Dark mode";
         themeToggle.setAttribute("aria-label", theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
+        themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
     }
 
     if (savedTheme) {
